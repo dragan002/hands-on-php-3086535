@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+require_once('kindergarten.php');
 
 function first_day_of_school() {
 	return date('l F j, Y h:i a', mktime(8, 25, 0, 8, 29, 2022));
@@ -16,6 +18,6 @@ function has_honors($gpa) {
 	return $gpa > 3.5;
 }
 
-require_once( 'kindergarten.php' );
 
+echo "<h1>Grades for 1 to 8</h1>";
 echo first_day_of_school();

@@ -7,13 +7,13 @@
 	<body>
 		<main>
 			<?php 
-				if ( isset( $_POST['submit'] ) ) {
+
+				if(isset($_POST['submit'])) {
 					$num = (int)$_POST['number'];
-					if ( is_int($num) && $num > 0 ) {
-						echo '<h3>Great job! You submitted a positive integer!</h3>';
-					} else {
-						echo '<h3>ERROR! You did not submit a positive integer.</h3>';
+					if(is_int($num) && $num > 0) {
+						echo "This number is intenger and is greater then 0";
 					}
+					echo "This number is't integer or greater then 0";
 				}
 			?>
 			<form name="submit_number" method="POST">
